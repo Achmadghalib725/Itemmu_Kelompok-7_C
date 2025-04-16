@@ -3,33 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <title>Beranda - Itemmu</title>
+  <!-- CSS utama -->
   <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome untuk ikon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 <div class="full">
  <div class="container">   
+
+  <!-- ====== NAVBAR ====== -->
   <header class="navbar">
     <div class="navbar-top">
+      <!-- Logo dan Nama Website -->
       <div class="logo">
         <i class="fa-solid fa-store"></i>
         <span>Itemmu</span>
       </div>
+
+      <!-- Search Bar -->
       <div class="search-bar">
         <i class="fa-solid fa-magnifying-glass"></i>
         <input type="text" placeholder="Cari item...">
       </div>
+
+      <!-- Tombol Login -->
       <button class="login-btn">
         <i class="fa-solid fa-user"></i> Masuk
       </button>
     </div>
     <br>
+
+    <!-- Menu Navigasi Bawah -->
     <nav class="navbar-bottom">
       <a href="#">Beranda</a>
       <a href="#">Pusat bantuan</a>
       <a href="#">Berita</a>
     </nav>
   </header>
+
+  <!-- ====== CAROUSEL / SLIDESHOW ====== -->
   <div class="carousel-container">
     <div class="carousel-track" id="carouselTrack">
       <img src="asset/maxresdefault.png" class="carousel-slide" alt="Slide 1">
@@ -37,55 +50,81 @@
       <img src="asset/bannerr.png" class="carousel-slide" alt="Slide 3">
     </div>
 
+    <!-- Tombol Navigasi Carousel -->
     <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
     <button class="carousel-btn next" id="nextBtn">&#10095;</button>
 
+    <!-- Titik Navigasi Carousel -->
     <div class="carousel-dots" id="carouselDots"></div>
   </div>
+
+  <!-- ====== MENU IKON UTAMA ====== -->
   <div class="opacity">
     <div class="menu-section">
-     <div class="menu-item">
+      <!-- Menu: Top Up -->
+      <div class="menu-item">
         <div class="icon-box">
          <img src="asset/Rectangle.png" alt="Top Up">
         </div>
-       <p>Top Up</p>
-     </div>
-     <div class="menu-item">
-       <div class="icon-box">
-         <img src="asset/Gamepad.png" alt="Akun">
-       </div>
-       <p>Akun</p>
-     </div>
-     <div class="menu-item">
-       <div class="icon-box">
-         <img src="asset/Backpack.png" alt="Item">
-       </div>
-      <p>Item</p>
-     </div>
-     <div class="menu-item">
+        <p>Top Up</p>
+      </div>
+
+      <!-- Menu: Akun -->
+      <div class="menu-item">
         <div class="icon-box">
-            <img src="asset/coin 1.png" alt="Koin Game">
+         <img src="asset/Gamepad.png" alt="Akun">
         </div>
-      <p>Koin Game</p>
-     </div>
-    </div>
-   </div>
-   <section class="popular-games">
-    <div class="section-angled-background">
-      <div class="section-header">
-        <h2>GAME TERPOPULER</h2>
-        <p><i class="fa fa-shield"></i> pembelian anda terjamin 100% aman</p>
+        <p>Akun</p>
+      </div>
+
+      <!-- Menu: Item -->
+      <div class="menu-item">
+        <div class="icon-box">
+         <img src="asset/Backpack.png" alt="Item">
+        </div>
+        <p>Item</p>
+      </div>
+
+      <!-- Menu: Koin Game -->
+      <div class="menu-item">
+        <div class="icon-box">
+         <img src="asset/coin 1.png" alt="Koin Game">
+        </div>
+        <p>Koin Game</p>
       </div>
     </div>
-    <div class="game-grid" id="gameGrid"></div>
-    <div class="see-more">
-      <button id="seeMoreBtn">Lihat game lainnya</button>
-    </div>
-  </section>
-
   </div>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
- </div>
+
+  <!-- ====== SECTION GAME TERPOPULER ====== -->
+  <div class="padding-game">
+    <section class="popular-games">
+      <!-- Header Seksi -->
+      <div class="section-angled-background">
+        <div class="section-header">
+          <h2>GAME TERPOPULER</h2>
+          <p><i class="fa fa-shield"></i> pembelian anda terjamin 100% aman</p>
+        </div>
+      </div>
+
+      <!-- Grid untuk Menampilkan Daftar Game -->
+      <div class="game-grid" id="gameGrid"></div>
+
+      <!-- Tombol Lihat Game Lainnya -->
+      <div class="see-more">
+        <button id="seeMoreBtn">Lihat game lainnya</button>
+      </div>
+    </section>
+  </div>
+
+
+</div>
+
+ <!-- ====== SCRIPT JS ====== -->
+ <!-- Font Awesome (fallback jika link CDN di atas tidak cukup) -->
+ <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+ <!-- Script utama -->
+ <script src="script.js"></script>
+
+</div>
 </body>
 </html>

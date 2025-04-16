@@ -82,7 +82,7 @@ const gameGrid = document.getElementById("gameGrid");
 // Data contoh (pakai gambar PUBG sama semua)
 const games = new Array(16).fill({
   name: "PUBG MOBILE",
-  image: "https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/PUBG_Mobile_icon.png/220px-PUBG_Mobile_icon.png"
+  image: "asset/logopubg.png"
 });
 
 // Load game cards
