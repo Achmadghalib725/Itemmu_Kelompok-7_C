@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navbar Itemmu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="full">
+ <div class="container">   
+  <header class="navbar">
+    <div class="navbar-top">
+      <div class="logo">
+        <i class="fa-solid fa-store"></i>
+        <span>Itemmu</span>
+      </div>
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Cari item...">
+      </div>
+      <button class="login-btn">
+        <i class="fa-solid fa-user"></i> Masuk
+      </button>
+    </div>
+    <br>
+    <nav class="navbar-bottom">
+      <a href="#">Beranda</a>
+      <a href="#">Pusat bantuan</a>
+      <a href="#">Berita</a>
+    </nav>
+  </header>
+  <div class="carousel-container">
+    <div class="carousel-track" id="carouselTrack">
+      <img src="asset/maxresdefault.png" class="carousel-slide" alt="Slide 1">
+      <img src="asset/Banner.png" class="carousel-slide" alt="Slide 2">
+      <img src="asset/bannerr.png" class="carousel-slide" alt="Slide 3">
+    </div>
+
+    <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
+    <button class="carousel-btn next" id="nextBtn">&#10095;</button>
+
+    <div class="carousel-dots" id="carouselDots"></div>
+  </div>
+  <div class="opacity">
+    <div class="menu-section">
+     <div class="menu-item">
+        <div class="icon-box">
+         <img src="asset/Rectangle.png" alt="Top Up">
+        </div>
+       <p>Top Up</p>
+     </div>
+     <div class="menu-item">
+       <div class="icon-box">
+         <img src="asset/Gamepad.png" alt="Akun">
+       </div>
+       <p>Akun</p>
+     </div>
+     <div class="menu-item">
+       <div class="icon-box">
+         <img src="asset/Backpack.png" alt="Item">
+       </div>
+      <p>Item</p>
+     </div>
+     <div class="menu-item">
+        <div class="icon-box">
+            <img src="asset/coin 1.png" alt="Koin Game">
+        </div>
+      <p>Koin Game</p>
+     </div>
+    </div>
+   </div>
+  </div>
+
+  <script src="script.js"></script>
+ </div>
+</body>
+</html>

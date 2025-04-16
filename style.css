@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+  }
+  .full {
+    width: 100vw; /* gunakan seluruh lebar layar */
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+  }
+  
+  .navbar {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 16px 20px;
+  }
+  
+  .navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: #000;
+  }
+  
+  .logo i {
+    margin-right: 8px;
+    color: #c084fc; /* Ungu */
+    font-size: 20px;
+  }
+  
+  .search-bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: #f3f4f6;
+    border-radius: 12px;
+    padding: 8px 16px;
+    margin: 0 40px;
+    max-width: 600px;
+  }
+  
+  .search-bar i {
+    color: #a78bfa;
+    margin-right: 10px;
+  }
+  
+  .search-bar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  .login-btn {
+    background-color: #a855f7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .login-btn :hover {
+    background-color: #6a0dad;
+  }
+  .login-btn i {
+    margin-right: 6px;
+  }
+  
+  .navbar-bottom {
+    display: flex;
+    justify-content: start;
+    padding: 16px 0 0;
+    gap: 32px;
+  }
+  
+  .navbar-bottom a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #f7f7f7;
+  }
+  
+  .carousel-container {
+    max-width: 900px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background: white;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-slide {
+    min-width: 100%;
+    height: auto;
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .carousel-btn:hover {
+    background: rgba(255, 255, 255, 0.9);
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .carousel-dots {
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+  }
+  
+  .carousel-dots button {
+    height: 10px;
+    width: 1px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border: 0 ;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .carousel-dots button.active {
+    background-color: #6a0dad; /* ungu */
+  }
+  
+  .menu-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px 0px;
+    background:url(asset/mobile-legends-v0u46grjbqc6h9ga.png);
+  }
+  .opacity {
+    background: linear-gradient(180deg, #e0c6ff, #8600fc);
+  }
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .icon-box {
+    width: 100px;
+    height: 80px;
+    background: linear-gradient(180deg, #e0c6ff, #8600fc8b);
+    clip-path: polygon(
+      15% 0%,  /* potongan kiri atas */
+      100% 0%,
+      100% 85%, /* potongan kanan bawah */
+      85% 100%,
+      0% 100%,
+      0% 15%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .icon-box img {
+    width: 60px;
+    height: px;
+  }
+  
+  .menu-item p {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+  }
+  
+  
