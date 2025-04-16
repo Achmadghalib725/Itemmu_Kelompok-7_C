@@ -1,10 +1,11 @@
 body {
     margin: 0;
+    padding: 0;
     font-family: 'Segoe UI', sans-serif;
     background-color: #fff;
   }
   .full {
-    width: 100vw; /* gunakan seluruh lebar layar */
+    width: 100vw; 
     margin: 0;
     padding: 0;
     position: relative;
@@ -96,14 +97,14 @@ body {
     font-size: 14px;
   }
   .container {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 0;
+    padding-right: 0;
   }
   body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: #f7f7f7;
+    background: #ffffff;
   }
   
   .carousel-container {
@@ -177,7 +178,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 40px;
-    padding: 30px 0px;
+    padding: 50px 0px;
     background:url(asset/mobile-legends-v0u46grjbqc6h9ga.png);
   }
   .opacity {
@@ -225,6 +226,77 @@ body {
     font-size: 14px;
     font-weight: 600;
     color: white;
+  }  
+  .popular-games {
+    background: linear-gradient(to bottom right, #8436ce, #9c5ef7);
+    padding: 40px 20px;
+    width: 100%;
+    box-sizing: border-box;
   }
   
+  .section-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: white;
+  }
+  
+  .section-header p {
+    font-size: 14px;
+    color: #d9d9d9;
+    margin-bottom: 20px;
+  }
+  
+  .game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 16px;
+    justify-items: center;
+  }
+  
+  .game-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .game-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  
+  .game-card p {
+    margin-top: 6px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .see-more {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .see-more button {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .see-more button:hover {
+    background: white;
+    color: #8436ce;
+  }
+  .popular-games{
+    background: url(asset/epic-games-store_wNKJUVq\ 1.png);
+    
+  }
   

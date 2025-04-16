@@ -76,3 +76,29 @@ carouselContainer.addEventListener('wheel', (e) => {
 
   resetAutoSlide();
 }, { passive: false });
+
+const gameGrid = document.getElementById("gameGrid");
+
+// Data contoh (pakai gambar PUBG sama semua)
+const games = new Array(16).fill({
+  name: "PUBG MOBILE",
+  image: "https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/PUBG_Mobile_icon.png/220px-PUBG_Mobile_icon.png"
+});
+
+// Load game cards
+games.forEach(game => {
+  const card = document.createElement("div");
+  card.classList.add("game-card");
+
+  card.innerHTML = `
+    <img src="${game.image}" alt="${game.name}">
+    <p>${game.name}</p>
+  `;
+
+  gameGrid.appendChild(card);
+});
+
+// Tombol "Lihat game lainnya"
+document.getElementById("seeMoreBtn").addEventListener("click", () => {
+  alert("Menampilkan lebih banyak game (fitur bisa dikembangkan)");
+});
