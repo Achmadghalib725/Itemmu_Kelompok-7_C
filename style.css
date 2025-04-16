@@ -108,8 +108,8 @@ body {
   }
   
   .carousel-container {
-    max-width: 700px;
-    margin: 20px auto;
+    max-width: 650px;
+    margin: 30px auto;
     overflow: hidden;
     position: relative;
     border-radius: 16px;
@@ -180,6 +180,9 @@ body {
     gap: 40px;
     padding: 50px 0px;
     background:url(asset/mobile-legends-v0u46grjbqc6h9ga.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   .opacity {
     background: linear-gradient(180deg, #e0c6ff, #8600fc);
@@ -284,7 +287,7 @@ body {
     background: transparent;
     color: white;
     border: 2px solid white;
-    padding: 10px 20px;
+    padding: 10px 300 px;
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
@@ -295,8 +298,7 @@ body {
     background: white;
     color: #8436ce;
   }
-  .popular-games{
-    background: url(asset/epic-games-store_wNKJUVq\ 1.png);
-    
-  }
   
+  
+ 
+

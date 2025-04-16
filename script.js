@@ -102,3 +102,5 @@ games.forEach(game => {
 document.getElementById("seeMoreBtn").addEventListener("click", () => {
   alert("Menampilkan lebih banyak game (fitur bisa dikembangkan)");
 });
+
+
