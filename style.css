@@ -298,8 +298,199 @@ body {
     background: white;
     color: #8436ce;
   }
-  
 
-  
+  /* ====== PRODUCT CATEGORY SECTION ====== */
+.product-categories {
+  padding: 40px 5%;
+  background-color: #f9f9ff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+/* Box setiap kategori */
+.category-box {
+  background-color: #f5e9ff;
+  padding: 20px;
+  border-radius: 15px;
+  width: 48%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Header kategori */
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Judul kategori dengan icon */
+.category-header h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  color: #2d2d2d;
+}
+
+/* Gambar icon */
+.icon-img {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+/* Link 'Lihat lainnya' */
+.see-more-link {
+  font-size: 0.9rem;
+  color: #9933ff;
+  text-decoration: none;
+  border: 1px solid #9933ff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.see-more-link:hover {
+  background-color: #9933ff;
+  color: #fff;
+}
+
+/* Grid produk */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 15px;
+}
+
+/* Card produk */
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+}
+.product-card img {
+  width: 100%;
+  max-width: 70px;
+  height: auto;
+  margin-bottom: 5px;
+}
+.product-card p {
+  font-size: 0.85rem;
+  color: #333;
+}
+.product-categories {
+  padding: 30px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 kolom */
+  gap: 30px; /* jarak antar kategori */
+}
+
+.category-box {
+ /* margin-bottom: 40px; */
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.category-header h3 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.category-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.see-more-link {
+  font-size: 14px;
+  color: #b92828;
+  text-decoration: none;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+.product-card p {
+  font-size: 14px;
+  margin: 0;
+}
+.containerrrrr {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.berijark {
+  padding: 40px;
+}
+.payment-method-image {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-right: 12px;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.payment-method-card:hover .payment-method-image {
+  transform: scale(1.1);
+}
+
+/* Untuk gambar yang perlu bentuk lingkaran */
+.payment-method-image.circle {
+  border-radius: 50%;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Ukuran gambar yang berbeda-beda */
+.payment-method-image.large {
+  width: 50px;
+  height: 50px;
+}
+.payment-method-card{
+  position: flex;
+}
  
 
