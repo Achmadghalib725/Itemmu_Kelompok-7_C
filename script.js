@@ -1,106 +1,104 @@
-const track = document.getElementById('carouselTrack');
-const slides = Array.from(track.children);
-const nextBtn = document.getElementById('nextBtn');
-const prevBtn = document.getElementById('prevBtn');
-const dotsContainer = document.getElementById('carouselDots');
+// Carousel functionality
+const track = document.getElementById("carouselTrack")
+const slides = Array.from(track.children)
+const nextBtn = document.getElementById("nextBtn")
+const prevBtn = document.getElementById("prevBtn")
+const dotsContainer = document.getElementById("carouselDots")
 
-let currentSlide = 0;
+let currentSlide = 0
 
 // Buat dot sesuai jumlah slide
 slides.forEach((_, index) => {
-  const dot = document.createElement('button');
-  if (index === 0) dot.classList.add('active');
-  dotsContainer.appendChild(dot);
-});
+  const dot = document.createElement("button")
+  if (index === 0) dot.classList.add("active")
+  dotsContainer.appendChild(dot)
+})
 
-const dots = Array.from(dotsContainer.children);
+const dots = Array.from(dotsContainer.children)
 
 function updateCarousel() {
-  const slideWidth = slides[0].getBoundingClientRect().width;
-  track.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
+  const slideWidth = slides[0].getBoundingClientRect().width
+  track.style.transform = `translateX(-${slideWidth * currentSlide}px)`
 
-  dots.forEach(dot => dot.classList.remove('active'));
-  dots[currentSlide].classList.add('active');
+  dots.forEach((dot) => dot.classList.remove("active"))
+  dots[currentSlide].classList.add("active")
 }
 
 function goToNextSlide() {
-  currentSlide = (currentSlide + 1) % slides.length;
-  updateCarousel();
+  currentSlide = (currentSlide + 1) % slides.length
+  updateCarousel()
 }
 
 function goToPrevSlide() {
-  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-  updateCarousel();
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length
+  updateCarousel()
 }
 
 // Event listeners
-nextBtn.addEventListener('click', () => {
-  goToNextSlide();
-  resetAutoSlide(); // reset timer kalau tombol diklik
-});
+nextBtn.addEventListener("click", () => {
+  goToNextSlide()
+  resetAutoSlide() // reset timer kalau tombol diklik
+})
 
-prevBtn.addEventListener('click', () => {
-  goToPrevSlide();
-  resetAutoSlide();
-});
+prevBtn.addEventListener("click", () => {
+  goToPrevSlide()
+  resetAutoSlide()
+})
 
 dots.forEach((dot, index) => {
-  dot.addEventListener('click', () => {
-    currentSlide = index;
-    updateCarousel();
-    resetAutoSlide();
-  });
-});
+  dot.addEventListener("click", () => {
+    currentSlide = index
+    updateCarousel()
+    resetAutoSlide()
+  })
+})
 
-window.addEventListener('resize', updateCarousel);
+window.addEventListener("resize", updateCarousel)
 
 // Auto slide setiap 5 detik
-let autoSlide = setInterval(goToNextSlide, 5000);
+let autoSlide = setInterval(goToNextSlide, 5000)
 
 // Reset ulang timer ketika user berinteraksi
 function resetAutoSlide() {
-  clearInterval(autoSlide);
-  autoSlide = setInterval(goToNextSlide, 5000);
+  clearInterval(autoSlide)
+  autoSlide = setInterval(goToNextSlide, 5000)
 }
+
 // Geser dengan scroll mouse
-const carouselContainer = document.querySelector('.carousel-container');
+const carouselContainer = document.querySelector(".carousel-container")
 
-carouselContainer.addEventListener('wheel', (e) => {
-  e.preventDefault();
+carouselContainer.addEventListener(
+  "wheel",
+  (e) => {
+    e.preventDefault()
 
-  if (e.deltaY > 0) {
-    goToNextSlide();
-  } else {
-    goToPrevSlide();
-  }
+    if (e.deltaY > 0) {
+      goToNextSlide()
+    } else {
+      goToPrevSlide()
+    }
 
-  resetAutoSlide();
-}, { passive: false });
-
-const gameGrid = document.getElementById("gameGrid");
-
-// Data contoh (pakai gambar PUBG sama semua)
-const games = new Array(16).fill({
-  name: "PUBG MOBILE",
-  image: "asset/logopubg.png"
-});
-
-// Load game cards
-games.forEach(game => {
-  const card = document.createElement("div");
-  card.classList.add("game-card");
-
-  card.innerHTML = `
-    <img src="${game.image}" alt="${game.name}">
-    <p>${game.name}</p>
-  `;
-
-  gameGrid.appendChild(card);
-});
+    resetAutoSlide()
+  },
+  { passive: false },
+)
 
 // Tombol "Lihat game lainnya"
 document.getElementById("seeMoreBtn").addEventListener("click", () => {
-  alert("Menampilkan lebih banyak game (fitur bisa dikembangkan)");
-});
+  alert("Menampilkan lebih banyak game (fitur bisa dikembangkan)")
+})
 
+// Sticky Navbar functionality
+window.addEventListener("scroll", () => {
+  const navbarContainer = document.getElementById("navbar-container")
+  const navbar = document.getElementById("navbar")
 
+  if (window.scrollY > 10) {
+    navbarContainer.classList.add("navbar-scrolled")
+    navbar.classList.add("navbar-scrolled")
+  } else {
+    navbarContainer.classList.remove("navbar-scrolled")
+    navbar.classList.remove("navbar-scrolled")
+  }
+  
+})

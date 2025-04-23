@@ -1,240 +1,394 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Beranda - Itemmu</title>
-  <!-- CSS utama -->
-  <link rel="stylesheet" href="style.css">
-  <!-- Font Awesome untuk ikon -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-<div class="full">
- <div class="container">   
-
-  <!-- ====== NAVBAR ====== -->
-  <header class="navbar">
-    <div class="navbar-top">
-      <!-- Logo dan Nama Website -->
-      <div class="logo">
-        <i class="fa-solid fa-store"></i>
-        <span>Itemmu</span>
-      </div>
-
-      <!-- Search Bar -->
-      <div class="search-bar">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" placeholder="Cari item...">
-      </div>
-
-      <!-- Tombol Login -->
-      <button class="login-btn">
-        <i class="fa-solid fa-user"></i> Masuk
-      </button>
-    </div>
-    <br>
-
-    <!-- Menu Navigasi Bawah -->
-    <nav class="navbar-bottom">
-      <a href="#">Beranda</a>
-      <a href="#">Pusat bantuan</a>
-      <a href="#">Berita</a>
-    </nav>
-  </header>
-
-  <!-- ====== CAROUSEL / SLIDESHOW ====== -->
-  <div class="carousel-container">
-    <div class="carousel-track" id="carouselTrack">
-      <img src="asset/maxresdefault.png" class="carousel-slide" alt="Slide 1">
-      <img src="asset/Banner.png" class="carousel-slide" alt="Slide 2">
-      <img src="asset/bannerr.png" class="carousel-slide" alt="Slide 3">
-    </div>
-
-    <!-- Tombol Navigasi Carousel -->
-    <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
-    <button class="carousel-btn next" id="nextBtn">&#10095;</button>
-
-    <!-- Titik Navigasi Carousel -->
-    <div class="carousel-dots" id="carouselDots"></div>
-  </div>
-
-  <!-- ====== MENU IKON UTAMA ====== -->
-  <div class="opacity">
-    <div class="menu-section">
-      <!-- Menu: Top Up -->
-      <div class="menu-item">
-        <div class="icon-box">
-         <img src="asset/Rectangle.png" alt="Top Up">
-        </div>
-        <p>Top Up</p>
-      </div>
-
-      <!-- Menu: Akun -->
-      <div class="menu-item">
-        <div class="icon-box">
-         <img src="asset/Gamepad.png" alt="Akun">
-        </div>
-        <p>Akun</p>
-      </div>
-
-      <!-- Menu: Item -->
-      <div class="menu-item">
-        <div class="icon-box">
-         <img src="asset/Backpack.png" alt="Item">
-        </div>
-        <p>Item</p>
-      </div>
-
-      <!-- Menu: Koin Game -->
-      <div class="menu-item">
-        <div class="icon-box">
-         <img src="asset/coin 1.png" alt="Koin Game">
-        </div>
-        <p>Koin Game</p>
-      </div>
-    </div>
-  </div>
-  <div class="berijarak">
-  <!-- ====== SECTION GAME TERPOPULER ====== -->
-  <div class="padding-game">
-    <section class="popular-games">
-      <!-- Header Seksi -->
-      <div class="section-angled-background">
-        <div class="section-header">
-          <h2>GAME TERPOPULER</h2>
-          <p><i class="fa fa-shield"></i> pembelian anda terjamin 100% aman</p>
-        </div>
-      </div>
-
-      <!-- Grid untuk Menampilkan Daftar Game -->
-      <div class="game-grid" id="gameGrid"></div>
-
-      <!-- Tombol Lihat Game Lainnya -->
-      <div class="see-more">
-        <button id="seeMoreBtn">Lihat game lainnya</button>
-      </div>
-    </section>
-  </div>
-
-  <!-- ====== KATEGORI PRODUK ====== -->
-<!-- ====== KATEGORI PRODUK ====== -->
-<section class="product-categories">
-
-  <!-- Kategori: Top Up -->
-  <div class="category-box">
-    <div class="category-header">
-      <img src="asset/Rectangle.png" alt="Top Up Icon" class="category-icon">
-      <h3>Top Up</h3>
-      <a href="#" class="see-more-link">Lihat lainnya</a>
-    </div>
-    <div class="product-grid">
-      <div class="product-card"><img src="asset/mlbb.png"><p>Mobile Legends</p></div>
-      <div class="product-card"><img src="asset/ff.png"><p>Free Fire</p></div>
-      <div class="product-card"><img src="asset/pubg.png"><p>PUBG Mobile</p></div>
-      <div class="product-card"><img src="asset/genshin.png"><p>Genshin Impact</p></div>
-      <div class="product-card"><img src="asset/valo.png"><p>Valorant</p></div>
-      <div class="product-card"><img src="asset/codm.png"><p>COD Mobile</p></div>
-    </div>
-  </div>
-
-  <!-- Kategori: Akun -->
-  <div class="category-box">
-    <div class="category-header">
-      <img src="asset/gamepad.png" alt="Akun Icon" class="category-icon">
-      <h3>Akun</h3>
-      <a href="#" class="see-more-link">Lihat lainnya</a>
-    </div>
-    <div class="product-grid">
-      <div class="product-card"><img src="asset/mlbb.png"><p>Mobile Legends</p></div>
-      <div class="product-card"><img src="asset/ff.png"><p>Free Fire</p></div>
-      <div class="product-card"><img src="asset/genshin.png"><p>Genshin Impact</p></div>
-      <div class="product-card"><img src="asset/valo.png"><p>Valorant</p></div>
-    </div>
-  </div>
-
-  <!-- Kategori: Item -->
-  <div class="category-box">
-    <div class="category-header">
-      <img src="asset/backpack.png" alt="Item Icon" class="category-icon">
-      <h3>Item</h3>
-      <a href="#" class="see-more-link">Lihat lainnya</a>
-    </div>
-    <div class="product-grid">
-      <div class="product-card"><img src="asset/skin-ml.png"><p>Skin ML</p></div>
-      <div class="product-card"><img src="asset/emote-ff.png"><p>Emote FF</p></div>
-      <div class="product-card"><img src="asset/weapon-pubg.png"><p>Senjata PUBG</p></div>
-    </div>
-  </div>
-
-  <!-- Kategori: Coin Game -->
-  <div class="category-box">
-    <div class="category-header">
-      <img src="asset/coin 1.png" alt="Koin Icon" class="category-icon">
-      <h3>Coin Game</h3>
-      <a href="#" class="see-more-link">Lihat lainnya</a>
-    </div>
-    <div class="product-grid">
-      <div class="product-card"><img src="asset/coin-ml.png"><p>Koin ML</p></div>
-      <div class="product-card"><img src="asset/coin-ff.png"><p>Koin FF</p></div>
-      <div class="product-card"><img src="asset/coin-valorant.png"><p>Valorant Points</p></div>
-    </div>
-  </div>
-</section>
-</div>
-<br>
-<hr>
-<div class="containerrrrr">
-  <div class="logo">
-    <i class="fa-solid fa-store"></i>
-    <span>Itemmu</span>
-  </div>
-
-        <div class="payment-section">
-          <h3 class="payment-section-title">Metode Pembayaran</h3>
-          <div class="payment-methods-grid">
-              <div class="payment-method-card">
-                  <img src="asset/Gopay.png" class="payment-method-image" alt="Gopay">
-                  <span class="payment-method-name"></span>
-              </div>
-              <div class="payment-method-card">
-                  <img src="asset/DANA.png" class="payment-method-image" alt="DANA">
-                  <span class="payment-method-name"></span>
-              </div>
-              <div class="payment-method-card">
-                  <img src="asset/Ovo.png" class="payment-method-image" alt="OVO">
-                  <span class="payment-method-name"></span>
-              </div>
-              <div class="payment-method-card">
-                  <img src="asset/Shopee Pay.png" class="payment-method-image" alt="shopee">
-                  <span class="payment-method-name"></span>
-              </div>
-              
-          </div>
-      </div>
-
-        <div class="section">
-            <div class="section-title">Layanan Bantuan</div>
-            <div class="help-section">
-                <p>Jika Anda membutuhkan bantuan, silakan hubungi kami dengan mengklik "Layanan Pelanggan" untuk menghubungi kami.</p>
-                <a href="#" class="help-button">Layanan Pelanggan</a>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Beranda - Itemmu</title>
+      <!-- CSS utama -->
+      <link rel="stylesheet" href="style.css">
+      <!-- Font Awesome untuk ikon -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="full">
+      <!-- Add the navbar wrapper -->
+      <div class="navbar-wrapper" >
+        <!-- ====== NAVBAR ====== -->
+        <header class="navbar" id="navbar">
+          <div class="navbar-top">
+            <!-- Logo dan Nama Website -->
+            <div class="logo">
+              <i class="fa-solid fa-store"></i>
+              <span>Itemmu</span>
             </div>
+    
+            <!-- Search Bar -->
+            <div class="search-bar">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="Cari item...">
+            </div>
+    
+            <!-- Tombol Login -->
+            <button class="login-btn">
+              <i class="fa-solid fa-user"></i> Masuk
+            </button>
+          </div>
+          <br>
+    
+          <!-- Menu Navigasi Bawah -->
+          <nav class="navbar-bottom">
+            <a href="#">Beranda</a>
+            <a href="#">Pusat bantuan</a>
+            <a href="#">Berita</a>
+          </nav>
+        </header>
+      </div>
+    
+      <!-- Add content wrapper -->
+      <div class="content-wrapper">
+        <div class="container">   
+          <!-- ====== CAROUSEL / SLIDESHOW ====== -->
+          <div class="carousel-container">
+            <div class="carousel-track" id="carouselTrack">
+              <img src="asset/maxresdefault.png" class="carousel-slide" alt="Slide 1">
+              <img src="asset/Banner.png" class="carousel-slide" alt="Slide 2">
+              <img src="asset/bannerr.png" class="carousel-slide" alt="Slide 3">
+            </div>
+    
+            <!-- Tombol Navigasi Carousel -->
+            <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
+            <button class="carousel-btn next" id="nextBtn">&#10095;</button>
+    
+            <!-- Titik Navigasi Carousel -->
+            <div class="carousel-dots" id="carouselDots"></div>
+          </div>
+    <!-- ====== MENU IKON UTAMA ====== -->
+    <div class="opacity">
+      <div class="menu-section">
+        <!-- Menu: Top Up -->
+        <div class="menu-item">
+          <div class="icon-box">
+          <img src="asset/Rectangle.png" alt="Top Up">
+          </div>
+          <p>Top Up</p>
         </div>
 
-        <div class="follow-us">
-            <div class="section-title">Ikuti Kami</div>
-            <!-- Tambahkan icon media sosial disini -->
+        <!-- Menu: Akun -->
+        <div class="menu-item">
+          <div class="icon-box">
+          <img src="asset/Gamepad.png" alt="Akun">
+          </div>
+          <p>Akun</p>
         </div>
+
+        <!-- Menu: Item -->
+        <div class="menu-item">
+          <div class="icon-box">
+          <img src="asset/Backpack.png" alt="Item">
+          </div>
+          <p>Item</p>
+        </div>
+
+        <!-- Menu: Koin Game -->
+        <div class="menu-item">
+          <div class="icon-box">
+          <img src="asset/coin 1.png" alt="Koin Game">
+          </div>
+          <p>Koin Game</p>
+        </div>
+      </div>
     </div>
 
+    <div class="berijarak">
+      <!-- ====== SECTION GAME TERPOPULER ====== -->
+      <div class="padding-game">
+        <!-- Update the popular games section to match the design -->
+        <section class="popular-games">
+          <!-- Header Seksi -->
+          <div class="section-header">
+            <h2>GAME TERPOPULER</h2>
+            <p><i class="fa-solid fa-shield"></i> pembelian anda terjamin 100% aman</p>
+          </div>
+    
+          <!-- Grid untuk Menampilkan Daftar Game -->
+          <div class="game-grid">
+            <!-- First row -->
+            <div class="game-card">
+              <div class="game-image-container">
+                <img src="asset/logopubg.png" alt="PUBG MOBILE">
+              </div>
+              <p>PUBG MOBILE</p>
+            </div>
+            <div class="game-card">
+              <div class="game-image-container">
+                <img src="asset/logopubg.png" alt="PUBG MOBILE">
+              </div>
+              <p>PUBG MOBILE</p>
+            </div>
+            <div class="game-card">
+              <div class="game-image-container">
+                <img src="asset/logopubg.png" alt="PUBG MOBILE">
+              </div>
+              <p>PUBG MOBILE</p>
+            </div>
+            <div class="game-card">
+              <div class="game-image-container">
+                <img src="asset/logopubg.png" alt="PUBG MOBILE">
+              </div>
+              <p>PUBG MOBILE</p>
+            </div>
+            <div class="game-card">
+              <div class="game-image-container">
+                <img src="asset/logopubg.png" alt="PUBG MOBILE">
+              </div>
+              <p>PUBG MOBILE</p>
+            </div>
+            <div class="game-card">
+              <div class="game-image-container">
+                <img src="asset/logopubg.png" alt="PUBG MOBILE">
+              </div>
+              <p>PUBG MOBILE</p>
+            </div>
+            <div class="game-card">
+              <div class="game-image-container">
+                <img src="asset/logopubg.png" alt="PUBG MOBILE">
+              </div>
+              <p>PUBG MOBILE</p>
+            </div>
+            
+            <!-- Second row -->
+            <div class="game-card">
+              <div class="game-image-container">
+                <img src="asset/logopubg.png" alt="PUBG MOBILE">
+              </div>
+              <p>PUBG MOBILE</p>
+            </div>
+            <div class="game-card">
+              <div class="game-image-container">
+                <img src="asset/logopubg.png" alt="PUBG MOBILE">
+              </div>
+              <p>PUBG MOBILE</p>
+            </div>
+            <div class="game-card">
+              <div class="game-image-container">
+                <img src="asset/logopubg.png" alt="PUBG MOBILE">
+              </div>
+              <p>PUBG MOBILE</p>
+            </div>
+            <div class="game-card">
+              <div class="game-image-container">
+                <img src="asset/logopubg.png" alt="PUBG MOBILE">
+              </div>
+              <p>PUBG MOBILE</p>
+            </div>
+            <div class="game-card">
+              <div class="game-image-container">
+                <img src="asset/logopubg.png" alt="PUBG MOBILE">
+              </div>
+              <p>PUBG MOBILE</p>
+            </div>
+            <div class="game-card">
+              <div class="game-image-container">
+                <img src="asset/logopubg.png" alt="PUBG MOBILE">
+              </div>
+              <p>PUBG MOBILE</p>
+            </div>
+            <div class="game-card">
+              <div class="game-image-container">
+                <img src="asset/logopubg.png" alt="PUBG MOBILE">
+              </div>
+              <p>PUBG MOBILE</p>
+            </div>
+          </div>
 
-</div>
+          
+    
+          <!-- Tombol Lihat Game Lainnya -->
+          <div class="see-more">
+            <button id="seeMoreBtn">Lihat game lainnya</button>
+          </div>
+        </section>
+      </div>
 
- <!-- ====== SCRIPT JS ====== -->
- <!-- Font Awesome (fallback jika link CDN di atas tidak cukup) -->
- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
- <!-- Script utama -->
- <script src="script.js"></script>
 
-</div>
-</body>
-</html>
+    <!-- ====== KATEGORI PRODUK ====== -->
+    <div class="categories-container">
+      <div class="categories-row">
+        <!-- Kategori: Top Up -->
+        <div class="category-box">
+          <div class="category-header">
+            <div class="category-title">
+              <img src="asset/Rectangle.png" alt="Top Up Icon" class="category-icon">
+              <h3>Top Up</h3>
+            </div>
+            <a href="#" class="see-more-link">Lihat lainnya</a>
+          </div>
+          <div class="product-section">
+            <div class="product-grid">
+              <div class="product-card"><img src="asset/mlbb.png"><p>Mobile Legends</p></div>
+              <div class="product-card"><img src="asset/ff.png"><p>Free Fire</p></div>
+              <div class="product-card"><img src="asset/pubg.png"><p>PUBG Mobile</p></div>
+              <div class="product-card"><img src="asset/genshin.png"><p>Genshin Impact</p></div>
+              <div class="product-card"><img src="asset/valo.png"><p>Valorant</p></div>
+              <div class="product-card"><img src="asset/codm.png"><p>COD Mobile</p></div>
+              <div class="product-card"><img src="asset/mlbb.png"><p>Mobile Legends</p></div>
+              <div class="product-card"><img src="asset/ff.png"><p>Free Fire</p></div>
+              <div class="product-card"><img src="asset/pubg.png"><p>PUBG Mobile</p></div>
+              <div class="product-card"><img src="asset/genshin.png"><p>Genshin Impact</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kategori: Akun -->
+        <div class="category-box">
+          <div class="category-header">
+            <div class="category-title">
+              <img src="asset/gamepad.png" alt="Akun Icon" class="category-icon">
+              <h3>Akun</h3>
+            </div>
+            <a href="#" class="see-more-link">Lihat lainnya</a>
+          </div>
+          <div class="product-section">
+            <div class="product-grid">
+              <div class="product-card"><img src="asset/mlbb.png"><p>Mobile Legends</p></div>
+              <div class="product-card"><img src="asset/ff.png"><p>Free Fire</p></div>
+              <div class="product-card"><img src="asset/genshin.png"><p>Genshin Impact</p></div>
+              <div class="product-card"><img src="asset/valo.png"><p>Valorant</p></div>
+              <div class="product-card"><img src="asset/codm.png"><p>COD Mobile</p></div>
+              <div class="product-card"><img src="asset/mlbb.png"><p>Mobile Legends</p></div>
+              <div class="product-card"><img src="asset/ff.png"><p>Free Fire</p></div>
+              <div class="product-card"><img src="asset/genshin.png"><p>Genshin Impact</p></div>
+              <div class="product-card"><img src="asset/valo.png"><p>Valorant</p></div>
+              <div class="product-card"><img src="asset/codm.png"><p>COD Mobile</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="categories-row">
+        <!-- Kategori: Item -->
+        <div class="category-box">
+          <div class="category-header">
+            <div class="category-title">
+              <img src="asset/backpack.png" alt="Item Icon" class="category-icon">
+              <h3>Item</h3>
+            </div>
+            <a href="#" class="see-more-link">Lihat lainnya</a>
+          </div>
+          <div class="product-section">
+            <div class="product-grid">
+              <div class="product-card"><img src="asset/skin-ml.png"><p>Skin ML</p></div>
+              <div class="product-card"><img src="asset/emote-ff.png"><p>Emote FF</p></div>
+              <div class="product-card"><img src="asset/weapon-pubg.png"><p>Senjata PUBG</p></div>
+              <div class="product-card"><img src="asset/skin-ml.png"><p>Skin ML</p></div>
+              <div class="product-card"><img src="asset/emote-ff.png"><p>Emote FF</p></div>
+              <div class="product-card"><img src="asset/weapon-pubg.png"><p>Senjata PUBG</p></div>
+              <div class="product-card"><img src="asset/skin-ml.png"><p>Skin ML</p></div>
+              <div class="product-card"><img src="asset/emote-ff.png"><p>Emote FF</p></div>
+              <div class="product-card"><img src="asset/weapon-pubg.png"><p>Senjata PUBG</p></div>
+              <div class="product-card"><img src="asset/skin-ml.png"><p>Skin ML</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kategori: Coin Game -->
+        <div class="category-box">
+          <div class="category-header">
+            <div class="category-title">
+              <img src="asset/coin 1.png" alt="Koin Icon" class="category-icon">
+              <h3>Coin Game</h3>
+            </div>
+            <a href="#" class="see-more-link">Lihat lainnya</a>
+          </div>
+          <div class="product-section">
+            <div class="product-grid">
+              <div class="product-card"><img src="asset/logopubg.png"><p>Koin ML</p></div>
+              <div class="product-card"><img src="asset/logopubg.png"><p>Koin FF</p></div>
+              <div class="product-card"><img src="asset/logopubg.png"><p>Valorant Points</p></div>
+              <div class="product-card"><img src="asset/coin-ml.png"><p>Koin ML</p></div>
+              <div class="product-card"><img src="asset/coin-ff.png"><p>Koin FF</p></div>
+              <div class="product-card"><img src="asset/coin-valorant.png"><p>Valorant Points</p></div>
+              <div class="product-card"><img src="asset/coin-ml.png"><p>Koin ML</p></div>
+              <div class="product-card"><img src="asset/coin-ff.png"><p>Koin FF</p></div>
+              <div class="product-card"><img src="asset/coin-valorant.png"><p>Valorant Points</p></div>
+              <div class="product-card"><img src="asset/coin-ml.png"><p>Koin ML</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo dan Deskripsi -->
+      <div class="footer-top">
+        <div class="logo-container">
+          <div class="logo">
+            <i class="fa-solid fa-store"></i>
+            <span>Itemmu</span>
+          </div>
+          <p class="footer-description">
+            itemmu adalah tempat jual beli gold, item, currency, top-up, akun, dan voucher online game dan virtual product lainnya yang memberikan jaminan keamanan transaksi dan garansi uang kembali 100%.
+          </p>
+        </div>
+      </div>
+      
+      <hr class="footer-divider">
+      
+      <!-- Metode Pembayaran dan Ikuti Kami -->
+      <div class="footer-middle">
+        <div class="footer-section">
+          <h3>Metode Pembayaran</h3>
+          <div class="payment-methods">
+            <img src="asset/Gopay.png" alt="Gopay">
+            <img src="asset/DANA.png" alt="DANA">
+            <img src="asset/Ovo.png" alt="OVO">
+            <img src="asset/Shopee Pay.png" alt="Shopee Pay">
+            <img src="asset/qris.png" alt="QRIS">
+            <img src="asset/visa.png" alt="Visa">
+            <img src="asset/mastercard.png" alt="Mastercard">
+            <img src="asset/alfamart.png" alt="Alfamart">
+            <img src="asset/indomaret.png" alt="Indomaret">
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Ikuti Kami</h3>
+          <div class="social-media">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Layanan Bantuan dan Button Layanan Pelanggan -->
+      <div class="footer-bottom">
+        <div class="footer-section">
+          <h3>Layanan Bantuan</h3>
+          <p>Jika Anda membutuhkan bantuan, silakan hubungi kami dengan mengklik "Layanan Pelanggan" untuk menghubungi kami.</p>
+        </div>
+        
+        <div class="footer-section customer-service">
+          <a href="#" class="layanan-pelanggan-btn">
+            <i class="fa-solid fa-headset"></i>
+            Layanan Pelanggan
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====== SCRIPT JS ====== -->
+  <!-- Font Awesome (fallback jika link CDN di atas tidak cukup) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Script utama -->
+  <script src="script.js"></script>
+
+  </div>
+  </body>
+  </html>
+    

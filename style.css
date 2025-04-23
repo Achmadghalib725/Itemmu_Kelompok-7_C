@@ -1,400 +1,378 @@
+/* Add this at the top of your CSS file */
+html,
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #fff;
-  }
-  .full {
-    width: 100vw; 
-    margin: 0;
-    padding: 0;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    transform: translateX(-50%);
-    overflow: hidden;
-  }
-  
-  .navbar {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 16px 20px;
-  }
-  
-  .navbar-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    font-size: 18px;
-    color: #000;
-  }
-  
-  .logo i {
-    margin-right: 8px;
-    color: #c084fc; /* Ungu */
-    font-size: 20px;
-  }
-  
-  .search-bar {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    background-color: #f3f4f6;
-    border-radius: 12px;
-    padding: 8px 16px;
-    margin: 0 40px;
-    max-width: 600px;
-  }
-  
-  .search-bar i {
-    color: #a78bfa;
-    margin-right: 10px;
-  }
-  
-  .search-bar input {
-    border: none;
-    background: transparent;
-    outline: none;
-    width: 100%;
-    font-size: 14px;
-  }
-  
-  .login-btn {
-    background-color: #a855f7;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-size: 14px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-  }
-  .login-btn :hover {
-    background-color: #6a0dad;
-  }
-  .login-btn i {
-    margin-right: 6px;
-  }
-  
-  .navbar-bottom {
-    display: flex;
-    justify-content: start;
-    padding: 16px 0 0;
-    gap: 32px;
-  }
-  
-  .navbar-bottom a {
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-    font-size: 14px;
-  }
-  .container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background: #ffffff;
-  }
-  
-  .carousel-container {
-    max-width: 650px;
-    margin: 30px auto;
-    overflow: hidden;
-    position: relative;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    background: white;
-  }
-  
-  .carousel-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .carousel-slide {
-    min-width: 100%;
-    height: auto;
-  }
-  
-  .carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.7);
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    z-index: 10;
-  }
-  
-  .carousel-btn:hover {
-    background: rgba(255, 255, 255, 0.9);
-  }
-  
-  .prev {
-    left: 10px;
-  }
-  
-  .next {
-    right: 10px;
-  }
-  
-  .carousel-dots {
-    text-align: center;
-    position: absolute;
-    bottom: 15px;
-    width: 100%;
-  }
-  
-  .carousel-dots button {
-    height: 10px;
-    width: 1px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border: 0 ;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .carousel-dots button.active {
-    background-color: #6a0dad; /* ungu */
-  }
-  
-  .menu-section {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 50px 0px;
-    background:url(asset/mobile-legends-v0u46grjbqc6h9ga.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  .opacity {
-    background: linear-gradient(180deg, #e0c6ff, #8600fc);
-  }
-  .menu-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  .menu-item:hover {
-    transform: translateY(-5px);
-  }
-  
-  .icon-box {
-    width: 100px;
-    height: 80px;
-    background: linear-gradient(180deg, #e0c6ff, #8600fc8b);
-    clip-path: polygon(
-      15% 0%,  /* potongan kiri atas */
-      100% 0%,
-      100% 85%, /* potongan kanan bawah */
-      85% 100%,
-      0% 100%,
-      0% 15%
-    );
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .icon-box img {
-    width: 60px;
-    height: px;
-  }
-  
-  .menu-item p {
-    font-size: 14px;
-    font-weight: 600;
-    color: white;
-  }  
-  .popular-games {
-    background: linear-gradient(to bottom right, #8436ce, #9c5ef7);
-    padding: 40px 20px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .section-header h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 4px;
-    color: white;
-  }
-  
-  .section-header p {
-    font-size: 14px;
-    color: #d9d9d9;
-    margin-bottom: 20px;
-  }
-  
-  .game-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 16px;
-    justify-items: center;
-  }
-  
-  .game-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .game-card img {
-    width: 80px;
-    height: 80px;
-    border-radius: 8px;
-    object-fit: cover;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-  }
-  
-  .game-card p {
-    margin-top: 6px;
-    font-size: 12px;
-    font-weight: 500;
-  }
-  
-  .see-more {
-    margin-top: 30px;
-    text-align: center;
-  }
-  
-  .see-more button {
-    background: transparent;
-    color: white;
-    border: 2px solid white;
-    padding: 10px 300 px;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s, color 0.3s;
-  }
-  
-  .see-more button:hover {
-    background: white;
-    color: #8436ce;
-  }
-
-  /* ====== PRODUCT CATEGORY SECTION ====== */
-.product-categories {
-  padding: 40px 5%;
-  background-color: #f9f9ff;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: space-between;
+  scroll-behavior: smooth;
 }
 
-/* Box setiap kategori */
-.category-box {
-  background-color: #f5e9ff;
-  padding: 20px;
-  border-radius: 15px;
-  width: 48%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-}
-
-/* Header kategori */
-.category-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-/* Judul kategori dengan icon */
-.category-header h3 {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 1.2rem;
-  color: #2d2d2d;
-}
-
-/* Gambar icon */
-.icon-img {
-  width: 22px;
-  height: 22px;
-  vertical-align: middle;
-}
-
-/* Link 'Lihat lainnya' */
-.see-more-link {
-  font-size: 0.9rem;
-  color: #9933ff;
-  text-decoration: none;
-  border: 1px solid #9933ff;
-  padding: 6px 12px;
-  border-radius: 8px;
-  transition: background 0.3s ease, color 0.3s ease;
-}
-.see-more-link:hover {
-  background-color: #9933ff;
-  color: #fff;
-}
-
-/* Grid produk */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
-  gap: 15px;
-}
-
-/* Card produk */
-.product-card {
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
   background-color: #fff;
-  border-radius: 10px;
-  padding: 8px;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease;
 }
-.product-card:hover {
+.full {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+/* Create a new wrapper for the navbar */
+.navbar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  
+}
+
+/* Keep your existing navbar styles but remove the sticky properties */
+.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 20px;
+}
+
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  color: #000;
+}
+
+.logo i {
+  margin-right: 8px;
+  color: #c084fc; /* Ungu */
+  font-size: 20px;
+}
+
+.search-bar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background-color: #f3f4f6;
+  border-radius: 12px;
+  padding: 8px 16px;
+  margin: 0 40px;
+  max-width: 900px;
+}
+
+.search-bar i {
+  color: #a78bfa;
+  margin-right: 10px;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+.login-btn {
+  background-color: #a855f7;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.login-btn :hover {
+  background-color: #6a0dad;
+}
+.login-btn i {
+  margin-right: 6px;
+}
+
+.navbar-bottom {
+  display: flex;
+  justify-content: start;
+  padding: 16px 0 0;
+  gap: 32px;
+}
+
+.navbar-bottom a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+}
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #ffffff;
+}
+
+/* Add this to create space for the fixed navbar */
+.content-wrapper {
+  padding-top: 120px; /* Adjust this value based on your navbar height */
+}
+
+.carousel-container {
+  max-width: 1100px;
+  max-height: 360px;
+  margin: 30px auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  height: auto;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.carousel-dots {
+  text-align: center;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+}
+
+.carousel-dots button {
+  height: 10px;
+  width: 1px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border: 0;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.carousel-dots button.active {
+  background-color: #6a0dad; /* ungu */
+}
+
+.menu-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px 0px;
+  background: url(asset/mole.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.opacity {
+  background: linear-gradient(180deg, #9451e8, #000000);
+}
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
   transform: translateY(-5px);
 }
-.product-card img {
-  width: 100%;
-  max-width: 70px;
-  height: auto;
-  margin-bottom: 5px;
-}
-.product-card p {
-  font-size: 0.85rem;
-  color: #333;
-}
-.product-categories {
-  padding: 30px 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 kolom */
-  gap: 30px; /* jarak antar kategori */
+
+.icon-box {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(180deg, #e0c6ff, #8600fc8b);
+  clip-path: polygon(
+    15% 0% /* potongan kiri atas */,
+    100% 0%,
+    100% 85% /* potongan kanan bawah */,
+    85% 100%,
+    0% 100%,
+    0% 15%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.category-box {
- /* margin-bottom: 40px; */
+.icon-box img {
+  width: 60px;
+  height: px;
+}
+
+.menu-item p {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+/* ====== POPULAR GAMES SECTION ====== */
+.popular-games {
+  position: relative;
+  background: linear-gradient(to bottom right, #905ad5, #3f1773);
+  padding: 40px 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.popular-games::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("asset/epic.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.section-header {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px 20px;
+}
+
+.section-header h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: white;
+  padding-left: 0;
+}
+
+.section-header p {
+  font-size: 14px;
+  color: #d9d9d9;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.section-header p i {
+  margin-right: 8px;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.game-card {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+}
+
+.game-image-container {
+  width: 100%;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.game-image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 0 12px 12px 12px;
+  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 20%);
+}
+
+.game-card p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+
+.see-more {
+  max-width: 1160px;
+  margin: 30px auto 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.see-more button {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 12px 20px;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.see-more button:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .category-header {
@@ -434,7 +412,7 @@ body {
   border-radius: 10px;
   padding: 10px;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .product-card img {
@@ -452,7 +430,7 @@ body {
   background: white;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header {
@@ -470,6 +448,7 @@ body {
   margin-right: 12px;
   border-radius: 8px;
   transition: transform 0.2s ease;
+  justify-content: flex;
 }
 
 .payment-method-card:hover .payment-method-image {
@@ -481,7 +460,7 @@ body {
   border-radius: 50%;
   padding: 5px;
   background: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Ukuran gambar yang berbeda-beda */
@@ -489,8 +468,350 @@ body {
   width: 50px;
   height: 50px;
 }
-.payment-method-card{
+.payment-method-card {
   position: flex;
 }
- 
 
+/* ====== FOOTER STYLES ====== */
+.footer {
+  background-color: #ffffff;
+  padding: 40px 0;
+  width: 100%;
+  border-top: 1px solid #e5e7eb;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Logo dan Deskripsi */
+.footer-top {
+  margin-bottom: 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer .logo {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 24px;
+  color: #000;
+  min-width: 120px;
+}
+
+.footer .logo i {
+  margin-right: 8px;
+  color: #a855f7;
+  font-size: 28px;
+}
+
+.footer-description {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 800px;
+}
+
+.footer-divider {
+  border: none;
+  height: 1px;
+  background-color: #e5e7eb;
+  margin: 20px 0;
+}
+
+/* Metode Pembayaran dan Ikuti Kami */
+.footer-middle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.footer-middle .footer-section:first-child {
+  flex: 2;
+}
+
+.footer-middle .footer-section:last-child {
+  flex: 1;
+}
+
+/* Layanan Bantuan dan Button */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom .footer-section:first-child {
+  flex: 1;
+}
+
+.footer-bottom .footer-section.customer-service {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: left;
+}
+
+.footer-section p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Payment Methods - Updated for consistency */
+.payment-methods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+
+.payment-methods img {
+  height: 15px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+/* Social Media - Updated alignment */
+.social-media {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+.social-media a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f3f4f6;
+  color: #a855f7;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.social-media a:hover {
+  background-color: #a855f7;
+  color: white;
+}
+
+/* Customer Service Button - Made wider */
+.layanan-pelanggan-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #a855f7;
+  border: 1px solid #a855f7;
+  padding: 12px 48px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.layanan-pelanggan-btn i {
+  margin-right: 8px;
+}
+
+.layanan-pelanggan-btn:hover {
+  background-color: #a855f7;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .logo-container {
+    flex-direction: column;
+  }
+
+  .footer-middle,
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-middle .footer-section:last-child,
+  .footer-bottom .footer-section.customer-service {
+    align-items: flex-start;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .layanan-pelanggan-btn {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .payment-methods img {
+    height: 25px;
+  }
+}
+
+/* ====== PRODUCT CATEGORY SECTION ====== */
+.categories-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.categories-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Box untuk tiap kategori */
+.category-box {
+  border-radius: 20px;
+  padding: 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header kategori */
+.category-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.category-title {
+  display: flex;
+  align-items: center;
+}
+
+.category-header h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: #3a0073;
+}
+
+.category-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  margin-right: 12px;
+}
+
+/* Link 'Lihat lainnya' */
+.see-more-link {
+  font-size: 0.9rem;
+  color: #a855f7;
+  border: 1px solid #a855f7;
+  border-radius: 8px;
+  padding: 10px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.see-more-link:hover {
+  background-color: #e9d5ff;
+}
+
+/* Product Section */
+.product-section {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+  background-color: #f5f1fc;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+/* Grid Produk - 5 cards per row */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 16px;
+  justify-items: center;
+}
+
+/* Kartu Produk */
+.product-card {
+  background-color: transparent;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: none;
+  transition: transform 0.2s;
+  cursor: pointer;
+  width: 100%;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.product-card p {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+  color: #333;
+}
+
+/* Override any other product-card styles that might be causing conflicts */
+.product-section .product-card {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .categories-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+  }
+}
