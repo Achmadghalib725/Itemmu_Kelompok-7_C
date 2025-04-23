@@ -1,47 +1,48 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <title>Beranda - Itemmu</title>
-      <!-- CSS utama -->
-      <link rel="stylesheet" href="style.css">
-      <!-- Font Awesome untuk ikon -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  </head>
-  <body>
-    <div class="full">
-      <!-- Add the navbar wrapper -->
-      <div class="navbar-wrapper" >
-        <!-- ====== NAVBAR ====== -->
-        <header class="navbar" id="navbar">
-          <div class="navbar-top">
-            <!-- Logo dan Nama Website -->
-            <div class="logo">
-              <i class="fa-solid fa-store"></i>
-              <span>Itemmu</span>
-            </div>
-    
-            <!-- Search Bar -->
-            <div class="search-bar">
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <input type="text" placeholder="Cari item...">
-            </div>
-    
-            <!-- Tombol Login -->
-            <button class="login-btn">
-              <i class="fa-solid fa-user"></i> Masuk
-            </button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beranda - Itemmu</title>
+    <!-- CSS utama -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="full">
+    <!-- Add the navbar wrapper -->
+    <div class="navbar-wrapper" >
+      <!-- ====== NAVBAR ====== -->
+      <header class="navbar" id="navbar">
+        <div class="navbar-top">
+          <!-- Logo dan Nama Website -->
+          <div class="logo">
+            <i class="fa-solid fa-store"></i>
+            <span>Itemmu</span>
           </div>
-          <br>
+  
+          <!-- Search Bar -->
+          <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Cari item...">
+          </div>
+  
+          <!-- Tombol Login -->
+          <button class="login-btn">
+            <i class="fa-solid fa-user"></i> Masuk
+          </button>
+        </div>
+        <br>
+  
+        <!-- Menu Navigasi Bawah -->
+        <nav class="navbar-bottom">
+          <a href="#">Beranda</a>
+          <a href="#">Pusat bantuan</a>
+          <a href="#">Berita</a>
+        </nav>
+      </header>
+    </div>
     
-          <!-- Menu Navigasi Bawah -->
-          <nav class="navbar-bottom">
-            <a href="#">Beranda</a>
-            <a href="#">Pusat bantuan</a>
-            <a href="#">Berita</a>
-          </nav>
-        </header>
-      </div>
     
       <!-- Add content wrapper -->
       <div class="content-wrapper">
@@ -383,6 +384,17 @@
   </footer>
 
   <!-- ====== SCRIPT JS ====== -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const loginBtn = document.querySelector(".login-btn");
+      if (loginBtn) {
+        loginBtn.addEventListener("click", () => {
+          window.location.href = "login/login.html"; // Update path
+        });
+      }
+    });
+    </script>
   <!-- Font Awesome (fallback jika link CDN di atas tidak cukup) -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <!-- Script utama -->

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daftar - Itemmu</title>
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- CSS khusus register -->
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <!-- Register Container -->
+    <div class="register-container">
+        <div class="register-logo">
+            <img src="../asset/logo.png " alt="Itemmu Logo">
+        </div>
+        
+        <h1 class="register-title">DAFTAR ITEMMU</h1>
+        
+        <form class="register-form" id="registerForm">
+            <div class="form-group">
+                <label for="email">Alamat Email</label>
+                <input type="email" id="email" name="email" placeholder="Email address" required>
+                <span class="error-message" id="emailError"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <span class="error-message" id="usernameError"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Siapkan Kata Sandi</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <span class="error-message" id="passwordError"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="confirmPassword">Konfirmasi Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Masukan Ulang Password" required>
+                <span class="error-message" id="confirmPasswordError"></span>
+            </div>
+            
+            <div class="checkbox-group">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="termsAgreement" name="termsAgreement" required>
+                    <label for="termsAgreement">Saya telah membaca dan menyetujui <a href="#" class="link">Aturan Penggunaan</a></label>
+                </div>
+                
+                <div class="checkbox-item">
+                    <input type="checkbox" id="privacyAgreement" name="privacyAgreement" required>
+                    <label for="privacyAgreement">Saya telah membaca dan menyetujui <a href="#" class="link">Kebijakan Privasi</a></label>
+                </div>
+                
+                <div class="checkbox-item">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Saya ingin menerima berita dan penawaran khusus dari Itemmu</label>
+                </div>
+            </div>
+            
+            <button type="submit" class="register-btn">Daftar</button>
+        </form>
+        
+        <div class="login-link">
+            Sudah punya akun? <a href="login.html">Masuk sekarang</a>
+        </div>
+    </div>
+
+    <!-- Script register -->
+    <script src="register.js"></script>
+</body>
+</html>
