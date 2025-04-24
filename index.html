@@ -21,11 +21,17 @@
             <span>Itemmu</span>
           </div>
   
-          <!-- Search Bar -->
-          <div class="search-bar">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Cari item...">
-          </div>
+    <!-- Search Bar -->
+    <div class="search-container">
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" class="search-input" placeholder="Cari game...">
+        <div class="search-loading">
+          <i class="fa-solid fa-spinner fa-spin"></i>
+        </div>
+      </div>
+      <div class="search-results"></div>
+    </div>
   
           <!-- Tombol Login -->
           <button class="login-btn">
@@ -73,26 +79,26 @@
           <p>Top Up</p>
         </div>
 
-        <!-- Menu: Akun -->
+        <!-- Menu: Voucher-->
         <div class="menu-item">
           <div class="icon-box">
-          <img src="asset/Gamepad.png" alt="Akun">
+          <img src="asset/Gamepad.png" alt="Voucher">
           </div>
           <p>Voucher</p>
         </div>
 
-        <!-- Menu: Item -->
+        <!-- Menu: Pulsa/Data -->
         <div class="menu-item">
           <div class="icon-box">
-          <img src="asset/Backpack.png" alt="Item">
+          <img src="asset/Backpack.png" alt="Pulsa/Data">
           </div>
           <p>Pulsa/Data</p>
         </div>
 
-        <!-- Menu: Koin Game -->
+        <!-- Menu: Tagihan -->
         <div class="menu-item">
           <div class="icon-box">
-          <img src="asset/coin 1.png" alt="Koin Game">
+          <img src="asset/coin 1.png" alt="Tagihan">
           </div>
           <p>Tagihan</p>
         </div>
@@ -399,6 +405,7 @@
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <!-- Script utama -->
   <script src="script.js"></script>
+  <script src="search.js"></script>
 
   </div>
   </body>
