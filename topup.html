@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Top Up - Itemmu</title>
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- CSS utama -->
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS khusus topup -->
+    <link rel="stylesheet" href="topup.css">
+</head>
+<body>
+    <div class="full">
+        <!-- ====== NAVBAR ====== -->
+        <div class="navbar-wrapper">
+            <header class="navbar" id="navbar">
+                <div class="navbar-top">
+                    <!-- Logo dan Nama Website -->
+                    <div class="logo">
+                        <i class="fa-solid fa-store"></i>
+                        <span>Itemmu</span>
+                    </div>
+            
+                    <!-- Search Bar -->
+                    <div class="search-container">
+                        <div class="search-bar">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                            <input type="text" class="search-input" placeholder="Coba cari game kamu">
+                            <div class="search-loading">
+                                <i class="fa-solid fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                        <div class="search-results"></div>
+                    </div>
+            
+                    <!-- Tombol Login -->
+                    <button class="login-btn">
+                        <i class="fa-solid fa-user"></i> Masuk
+                    </button>
+                </div>
+                <br>
+            
+                <!-- Menu Navigasi Bawah -->
+                <nav class="navbar-bottom">
+                    <a href="index.html">Beranda</a>
+                    <a href="#">Pusat bantuan</a>
+                    <a href="#">Berita</a>
+                </nav>
+            </header>
+        </div>
+        
+        <!-- Add content wrapper -->
+        <div class="content-wrapper">
+            <!-- ====== BANNER ====== -->
+            <div class="carousel-container">
+                <div class="carousel-track" id="carouselTrack">
+                    <img src="asset/game-logo/banner/banner1.jpg" class="carousel-slide" alt="Slide 1">
+                    <img src="asset/game-logo/banner/banner2.jpeg" class="carousel-slide" alt="Slide 2">
+                    <img src="asset/game-logo/banner/banner3.jpg" class="carousel-slide" alt="Slide 3">
+                </div>
+        
+                <!-- Tombol Navigasi Carousel -->
+                <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
+                <button class="carousel-btn next" id="nextBtn">&#10095;</button>
+        
+                <!-- Titik Navigasi Carousel -->
+                <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+
+            <!-- ====== KATEGORI TABS ====== -->
+            <div class="category-tabs">
+                <button class="tab-btn active">Top Up</button>
+                <button class="tab-btn">Voucher</button>
+                <button class="tab-btn">Pulsa & Data</button>
+                <button class="tab-btn">Tagihan</button>
+            </div>
+
+            <!-- ====== GAME GRID ====== -->
+            <div class="games-container">
+                <div class="games-grid">
+                    <!-- Row 1 -->
+                    <div class="game-item">
+                        <img src="asset/game-logo/ml.webp" alt="Mobile Legends">
+                        <p>Mobile Legends</p>
+                    </div>
+                    <div class="game-item">
+                        <img src="asset/game-logo/hok.webp" alt="Honor of King">
+                        <p>Honor of King</p>
+                    </div>
+                    <div class="game-item">
+                        <img src="asset/game-logo/coc.webp" alt="Clash of Clan">
+                        <p>Clash of Clan</p>
+                    </div>
+                    <div class="game-item">
+                        <img src="asset/game-logo/pubg.webp" alt="PUBG Mobile">
+                        <p>PUBG Mobile</p>
+                    </div>
+                    <div class="game-item">
+                        <img src="asset/game-logo/cod.webp" alt="Call of Duty Mobile">
+                        <p>Call of Duty Mo.</p>
+                    </div>
+                    <div class="game-item">
+                        <img src="asset/game-logo/genshin.webp" alt="Genshin Impact">
+                        <p>Genshin Impact</p>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="game-item">
+                        <img src="asset/game-logo/ff.webp" alt="Free Fire">
+                        <p>Free Fire</p>
+                    </div>
+                    <div class="game-item">
+                        <img src="asset/game-logo/ff.webp" alt="Point Blank">
+                        <p>Point Blank</p>
+                    </div>
+                    <div class="game-item">
+                        <img src="asset/game-logo/valorant.webp" alt="Valorant">
+                        <p>Valorant</p>
+                    </div>
+                    <div class="game-item">
+                        <img src="asset/game-logo/ff.webp" alt="LOL">
+                        <p>LOL</p>
+                    </div>
+                    <div class="game-item">
+                        <img src="asset/game-logo/ff.webp" alt="Magic Chess GG">
+                        <p>Magic Chess GG</p>
+                    </div>
+                    <div class="game-item">
+                        <img src="asset/game-logo/ff.webp" alt="Clash Royale">
+                        <p>Clash Royale</p>
+                    </div>
+
+                    <!-- Row 3 (repeat of Row 1) -->
+                    <div class="game-item">
+                        <img src="asset/game-logo/ml.webp" alt="Mobile Legends">
+                        <p>Mobile Legends</p>
+                    </div>
+                    <div class="game-item">
+                        <img src="asset/game-logo/hok.webp" alt="Honor of King">
+                        <p>Honor of King</p>
+                    </div>
+                    <div class="game-item">
+                        <img src="asset/game-logo/coc.webp" alt="Clash of Clan">
+                        <p>Clash of Clan</p>
+                    </div>
+                    <div class="game-item">
+                        <img src="asset/game-logo/pubg.webp" alt="PUBG Mobile">
+                        <p>PUBG Mobile</p>
+                    </div>
+                    <div class="game-item">
+                        <img src="asset/game-logo/cod.webp" alt="Call of Duty Mobile">
+                        <p>Call of Duty Mo.</p>
+                    </div>
+                    <div class="game-item">
+                        <img src="asset/game-logo/genshin.webp" alt="Genshin Impact">
+                        <p>Genshin Impact</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ====== FOOTER ====== -->
+            <footer class="footer">
+                <div class="footer-container">
+                    <!-- Logo dan Deskripsi -->
+                    <div class="footer-top">
+                        <div class="logo-container">
+                            <div class="logo">
+                                <i class="fa-solid fa-store"></i>
+                                <span>Itemmu</span>
+                            </div>
+                            <p class="footer-description">
+                                Itemmu adalah tempat jual beli gold, item, currency, top-up, akun, dan voucher online game dan virtual product lainnya yang memberikan jaminan keamanan transaksi dan garansi uang kembali 100%.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <hr class="footer-divider">
+                    
+                    <!-- Metode Pembayaran dan Ikuti Kami -->
+                    <div class="footer-middle">
+                        <div class="footer-section">
+                            <h3>Metode Pembayaran</h3>
+                            <div class="payment-methods">
+                                <img src="asset/Gopay.png" alt="Gopay">
+                                <img src="asset/DANA.png" alt="DANA">
+                                <img src="asset/Ovo.png" alt="OVO">
+                                <img src="asset/Shopee Pay.png" alt="Shopee Pay">
+                                <img src="asset/qris.png" alt="QRIS">
+                                <img src="asset/visa.png" alt="Visa">
+                                <img src="asset/mastercard.png" alt="Mastercard">
+                                <img src="asset/alfamart.png" alt="Alfamart">
+                                <img src="asset/indomaret.png" alt="Indomaret">
+                            </div>
+                        </div>
+                        
+                        <div class="footer-section">
+                            <h3>Ikuti Kami</h3>
+                            <div class="social-media">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-tiktok"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-discord"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Layanan Bantuan dan Button Layanan Pelanggan -->
+                    <div class="footer-bottom">
+                        <div class="footer-section">
+                            <h3>Layanan Bantuan</h3>
+                            <p>Jika Anda membutuhkan bantuan, silakan hubungi kami dengan mengklik "Layanan Pelanggan" untuk menghubungi kami.</p>
+                        </div>
+                        
+                        <div class="footer-section customer-service">
+                            <a href="#" class="layanan-pelanggan-btn">
+                                <i class="fa-solid fa-headset"></i>
+                                Layanan Pelanggan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- ====== SCRIPT JS ====== -->
+    <script src="topup.js"></script>
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

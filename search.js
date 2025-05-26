@@ -55,7 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Fungsi untuk menampilkan hasil pencarian
   function renderSearchResults(games, query) {
-    // Jika tidak ada hasil
     if (games.length === 0) {
       if (searchResults) {
         searchResults.innerHTML = '<div class="no-results">Tidak ada hasil yang ditemukan.</div>'
@@ -68,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let resultsHTML = ""
 
     games.forEach((game) => {
-      // Highlight query di nama game
+      // Highlight nama game
       const highlightedName = highlightText(game.name, query)
 
       resultsHTML += `
@@ -91,18 +90,16 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelectorAll(".search-result-item").forEach((item) => {
         item.addEventListener("click", () => {
           const gameId = item.getAttribute("data-id")
-          // Redirect ke halaman detail game atau lakukan aksi lain
-          alert(`Anda memilih game dengan ID: ${gameId}`)
-          // Sembunyikan hasil pencarian
+          // Redirect ke halaman detail game
+          alert(`ID GAME PADA DATABASE: ${gameId}, Nanti akan dikembangkan lebih lanjut`)
           searchResults.classList.remove("active")
-          // Reset input pencarian
           if (searchInput) searchInput.value = ""
         })
       })
     }
   }
 
-  // Fungsi untuk highlight teks yang dicari
+  // highlight teks yang dicari
   function highlightText(text, query) {
     if (!query) return text
 
@@ -112,19 +109,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Event listener untuk input pencarian
   if (searchInput) {
-    // Pastikan loading tidak aktif saat halaman dimuat
     if (searchLoading) searchLoading.classList.remove("active")
 
     searchInput.addEventListener("input", (e) => {
       const query = e.target.value.trim()
       console.log("Search input:", query)
 
-      // Clear timeout sebelumnya
       if (searchTimeout) {
         clearTimeout(searchTimeout)
       }
 
-      // Jika query kosong, sembunyikan hasil pencarian dan loading
+      // jika kosong menyembunyikan hasil pencarian dan loading
       if (query === "") {
         if (searchResults) searchResults.classList.remove("active")
         if (searchLoading) searchLoading.classList.remove("active")
@@ -133,15 +128,12 @@ document.addEventListener("DOMContentLoaded", () => {
         return
       }
 
-      // Set timeout untuk debounce (mengurangi jumlah request)
       searchTimeout = setTimeout(() => {
         performSearch(query)
       }, 300)
     })
 
-    // Tambahkan event untuk focus pada input
     searchInput.addEventListener("focus", () => {
-      // Jika ada query dan hasil pencarian, tampilkan kembali
       if (searchInput.value.trim() !== "" && searchResults.children.length > 0) {
         searchResults.classList.add("active")
       }
